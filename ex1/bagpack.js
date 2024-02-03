@@ -1,25 +1,35 @@
 const bagPack = {
-    name: "Every Day Bagpack",
-    color: "gray",
-    volume: 50,
-    strapLength: {
-        left: 30,
-        right: 30
-    },
-    lidOpen: false,
-    toggleLid: function (lidstatus) {
-        this.lidOpen = lidstatus
-    },
-    newStapLength: function (leftLenght, rightLength) {
-        this.strapLength.left = leftLenght;
-        this.strapLength.right = rightLength
-    }
-}
-console.log("Bagpack :", bagPack)
-console.log("Lid status on before:", bagPack.lidOpen)
-bagPack.toggleLid(true)
-console.log("Lid status on after :", bagPack.lidOpen)
+  name: "Every Day Bagpack",
+  color: "gray",
+  volume: 50,
+  strapLength: {
+    left: 30,
+    right: 30,
+  },
+  lidOpen: false,
+  toggleLid: function (lidstatus) {
+    this.lidOpen = lidstatus;
+  },
+  newStapLength: function (leftLenght, rightLength) {
+    this.strapLength.left = leftLenght;
+    this.strapLength.right = rightLength;
+  },
+};
+console.log("Bagpack :", bagPack);
+console.log("Lid status on before:", bagPack.lidOpen);
+bagPack.toggleLid(true);
+console.log("Lid status on after :", bagPack.lidOpen);
 
-console.log("Straplength left before :", bagPack.strapLength.left)
-bagPack.newStapLength(40, 40)
-console.log("Straplenght left after :", bagPack.strapLength.left)
+console.log("Straplength left before :", bagPack.strapLength.left);
+bagPack.newStapLength(40, 40);
+console.log("Straplenght left after :", bagPack.strapLength.left);
+
+// why this access on brcket notation while this is wrong
+
+// let propName = "color"
+// const myObject = {
+//     ID = 3,
+//     color = "pink",
+//     propLength = 4,
+//     use = false
+// };

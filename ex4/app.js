@@ -43,9 +43,10 @@ const everyDayBagPack = new Bagpack(
   "gray",
   40,
   40,
-  "1 Februar 2024 5 PM IST",
+  "Jul 12 1989 22:53:32 PST",
   true
 );
 
 console.log("complete Object :", everyDayBagPack);
 console.log("date acquired :", everyDayBagPack.dateacquired);
+console.log("Age of bag: ", everyDayBagPack.backpackAge());
