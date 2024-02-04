@@ -6,12 +6,12 @@ class Bagpack {
     strapLengthL,
     strapLengthR,
     dateacquired,
-    lidOpen,
-    pocketNum
+    lidOpen
   ) {
     this.name = name;
     this.volume = volume;
     this.color = color;
+    this.year = year;
     this.strapLength = {
       left: strapLengthL,
       right: strapLengthR,
