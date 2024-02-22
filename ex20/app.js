@@ -72,10 +72,18 @@ let stuffList = document.createElement("ul");
  * for...in loop and objects
  */
 
-for (const singleObject in nestedObjects) {
-  const listItem = document.createElement("li");
-  listItem.innerHTML = nestedObjects[singleObject].name;
-  stuffList.append(listItem);
-}
+// for (const singleObject in nestedObjects) {
+//   const listItem = document.createElement("li");
+//   listItem.innerHTML = nestedObjects[singleObject].name;
+//   stuffList.append(listItem);
+// }
 
+const listItems = stuff.map((item) => {
+  let list = document.createElement("li");
+  list.innerHTML = item;
+  return list;
+});
+
+console.log("stuff : ", stuff);
+console.log("stuffItems : ", listItems);
 article.append(stuffList);
